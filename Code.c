@@ -5,6 +5,7 @@
 #include<windows.h>
 #include<string.h>
 #include<time.h>
+#include "ManageHeader.h"
 
 struct Airplane
 {
@@ -22,25 +23,27 @@ int main()
     int opt;
     do
     {
-		printf("\n\n\t\t ********************************************************************");
-		printf("\n\t\t                   welcome to Suyog's airline system                   ");
-		printf("\n\t\t   *******************************************************************");
-		printf("\n\n\n\t\t Please enter your choice from below (1-13):");
-		printf("\n\n\t\t 1. Insert a record");
-		printf("\n\n\t\t 2. Delete a record");
-		printf("\n\n\t\t 3. Get the number of flights");
-        printf("\n\n\t\t 4. Check whether list is empty");
-        printf("\n\n\t\t 5. Check whether list is full");
-        printf("\n\n\t\t 6. Update flight status");
-        printf("\n\n\t\t 7. Get the longest stay in all flights");
-        printf("\n\n\t\t 8. Remove duplicates(Make list unique)");
-        printf("\n\n\t\t 9. Make union list");
-        printf("\n\n\t\t 10. Make intersection list");
-        printf("\n\n\t\t 11. Get difference between lists");
-        printf("\n\n\t\t 12. Get Symmetric difference between lists");
-		printf("\n\n\t\t 13. EXIT");
-		printf("\n\n\t\t feel free to contact on 7721827790");
-		printf("\n\n\t\t Enter your choice :");
+		printf("\n\n\t\t\t ************************************************************************");
+		printf("\n\t\t\t                   Welcome to Suyog's airline system                   ");
+		printf("\n\t\t\t   *******************************************************************");
+        printf("\n\n\t\t\t   ************************* MENU ************************************");
+		printf("\n\t\t\t Please enter your choice from below (1-13):");
+		printf("\n\n\t\t\t 1. Insert a record");
+		printf("\n\n\t\t\t 2. Delete a record");
+		printf("\n\n\t\t\t 3. Get the number of flights");
+        printf("\n\n\t\t\t 4. Check whether list is empty");
+        printf("\n\n\t\t\t 5. Check whether list is full");
+        printf("\n\n\t\t\t 6. Update flight status");
+        printf("\n\n\t\t\t 7. Get the longest stay in all flights");
+        printf("\n\n\t\t\t 8. Remove duplicates(Make list unique)");
+        printf("\n\n\t\t\t 9. Make union list");
+        printf("\n\n\t\t\t 10. Make intersection list");
+        printf("\n\n\t\t\t 11. Get difference between lists");
+        printf("\n\n\t\t\t 12. Get Symmetric difference between lists");
+		printf("\n\n\t\t\t 13. EXIT");
+        printf("\n\n\t\t\t ********************************************************************");
+		printf("\n\n\t\t\t Feel free to contact on 7721827790");
+		printf("\n\n\t\t\t Enter your choice : ");
 
         scanf("%d",&opt);
         system("cls");
@@ -48,16 +51,16 @@ int main()
         switch (opt)
         {
         case 1:
-            insert();
+            Insert();
             break;
         case 2:
-            delete();
+            Delete();
             break;
         case 3:
             getNumFlights();
             break;
         case 4:
-            isEmpty();
+            is_Empty();
             break;
         case 5:
             isFull();
