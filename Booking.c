@@ -18,9 +18,9 @@ struct Passanger
     int Number_of_seat;
     char Type_by_food[6];
     int Origin;
-}
+};
 
-int main()
+void main()
 {
     struct Passanger Suyog;
 
@@ -33,5 +33,5 @@ int main()
     printf("Enter Your Mobile Number : ");
     scanf("%s",&Suyog.Number);
 
-    
+    return 0;
 }
