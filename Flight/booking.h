@@ -335,7 +335,7 @@ void booking()
 
         printf("Price = %d/seat",Suyog.price);
     }
-printf("\n\n");
+    printf("\n\n");
     //class of flight
 
     printf("Flight class available are:\n");
@@ -365,23 +365,16 @@ printf("\n\n");
     printf("\n\n");
     printf("press 1 for vegetarian food press 2 for Non-vegetarian food:\n");
     scanf("%d",&Suyog.Type_by_food);
-
-
-
-
-
-   char yes;
+    
+    char yes;
 
     printf("Do You want to confirm your seat?:\npress:\n1.yes\n2.no\n");
     scanf(" %d",&Suyog.confirm);
+    
+    printf("\n\n\n");
 
 
-   printf("\n\n\n");
-
-
- if(Suyog.confirm==1){
-
-
+    if(Suyog.confirm==1){
         printf("Name:-%s %s\n",Suyog.Fname,Suyog.Lname);
             printf("\n");
 
@@ -394,91 +387,87 @@ printf("\n\n");
         printf("Date:-%s\n",Suyog.Date_of_departure);
             printf("\n");
 
-      //Origin
-
-
-      if(Suyog.Type_destination==1){
-          if(Suyog.Origin==1){
-              printf("Origin_city: Mumbai\n");
-          }
-          else if(Suyog.Origin==2){
-              printf("Origin_city: Delhi\n");
-          }
-          else if(Suyog.Origin==3){
-              printf("Origin_city: Hydrabad\n");
-          }
-          else if(Suyog.Origin==4){
-              printf("Origin_city: Chennai\n");
-          }
-          else if(Suyog.Origin==5){
-              printf("Origin_city: Bengaluru\n");
-          }
-
-      }
-      else{
-          if(Suyog.Origin==1){
-              printf("Origin_city: Mumbai\n");
-          }
-          else if(Suyog.Origin==2){
-              printf("Origin_city: Delhi\n");
-          }
-          else if(Suyog.Origin==3){
-              printf("Origin_city: Hydrabad\n");
-          }
-          else if(Suyog.Origin==4){
-              printf("Origin_city: Chennai\n");
-          }
-          else if(Suyog.Origin==5){
-              printf("Origin_city: Bengaluru\n");
-          }
-      }
-      printf("\n");
-//destination-city
-      if(Suyog.Type_destination==1){
-          if(Suyog.destination==1){
-              printf("destination_city: Mumbai\n");
-          }
-          else if(Suyog.destination==2){
-              printf("destination_city: Delhi\n");
-          }
-          else if(Suyog.destination==3){
-              printf("destination_city: Hydrabad\n");
-          }
-          else if(Suyog.destination==4){
-              printf("destination_city: Chennai\n");
-          }
-          else if(Suyog.destination==5){
-              printf("destination_city: Bengaluru\n");
-          }
-      }
-       else{
+        //Origin
+        if(Suyog.Type_destination==1){
+            if(Suyog.Origin==1){
+                printf("Origin_city: Mumbai\n");
+            }
+            else if(Suyog.Origin==2){
+                printf("Origin_city: Delhi\n");
+            }
+            else if(Suyog.Origin==3){
+                printf("Origin_city: Hydrabad\n");
+            }
+            else if(Suyog.Origin==4){
+                printf("Origin_city: Chennai\n");
+            }
+            else if(Suyog.Origin==5){
+                printf("Origin_city: Bengaluru\n");
+            }
+        }
+        else{
+            if(Suyog.Origin==1){
+                printf("Origin_city: Mumbai\n");
+            }
+            else if(Suyog.Origin==2){
+                printf("Origin_city: Delhi\n");
+            }
+            else if(Suyog.Origin==3){
+                printf("Origin_city: Hydrabad\n");
+            }
+            else if(Suyog.Origin==4){
+                printf("Origin_city: Chennai\n");
+            }
+            else if(Suyog.Origin==5){
+                printf("Origin_city: Bengaluru\n");
+            }
+        }
+        printf("\n");
+        //destination-city
+        if(Suyog.Type_destination==1){
             if(Suyog.destination==1){
-              printf("destination_city: london\n");
-          }
-          else if(Suyog.destination==2){
-              printf("destination_city: paris\n");
-          }
-          else if(Suyog.destination==3){
-              printf("destination_city: san-fransico\n");
-          }
-          else if(Suyog.destination==4){
-              printf("destination_city: tokyo\n");
-          }
-          else if(Suyog.destination==5){
-              printf("destination_city: berlin\n");
-          }
+                printf("destination_city: Mumbai\n");
+            }
+            else if(Suyog.destination==2){
+                printf("destination_city: Delhi\n");
+            }
+            else if(Suyog.destination==3){
+                printf("destination_city: Hydrabad\n");
+            }
+            else if(Suyog.destination==4){
+                printf("destination_city: Chennai\n");
+            }
+            else if(Suyog.destination==5){
+                printf("destination_city: Bengaluru\n");
+            }
+        }
+        else{
+                if(Suyog.destination==1){
+                printf("destination_city: london\n");
+            }
+            else if(Suyog.destination==2){
+                printf("destination_city: paris\n");
+            }
+            else if(Suyog.destination==3){
+                printf("destination_city: san-fransico\n");
+            }
+            else if(Suyog.destination==4){
+                printf("destination_city: tokyo\n");
+            }
+            else if(Suyog.destination==5){
+                printf("destination_city: berlin\n");
+            }
 
-       }
+        }
 
-
-            printf("\n");
+        printf("\n");
 
         if(Suyog.class==1){
         printf("class of flight:-Business\n");}
         else{
             printf("class of flight:-Economy\n");
         }
-            printf("\n");
+        printf("\n");
 
         printf("number of seats:-%d\n",Suyog.Number_of_seat);
             printf("\n");
@@ -489,19 +478,21 @@ printf("\n\n");
         else{
             printf("food: Non-vegetarian\n");
         }
-            printf("\n");
+        printf("\n");
 
         printf("Total ticket price (%d*%d):- Rs%d",Suyog.Number_of_seat,Suyog.price,Suyog.Number_of_seat*Suyog.price);
 
 
-    printf("\n\n\n\n");
+        printf("\n\n\n\n");
 
-    printf("YOUR SEAT IS CONFIRMED!!\n");
-    printf("__________________THANK YOU!!_______________\n");
-    printf("__________________VISIT AGAIN :) _____________\n");
+        printf("YOUR SEAT IS CONFIRMED!!\n");
+        printf("__________________THANK YOU!!_______________\n");
+        printf("__________________VISIT AGAIN :) _____________\n");
 
- }
- else{
-     printf("your seat is not confirmed try again later :)");
- }
+    }
+    else{
+        printf("your seat is not confirmed try again later :)");
+    }
+    getch();
+    system("cls");
 }
