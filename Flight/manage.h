@@ -932,6 +932,7 @@ void listSymmetricDifference()
             if (strcmp(fl1[i].Name, fl2[j].Name) == 0 && fl1[i].flight_id == fl2[j].flight_id)
             {
                 found = 1;
+                break;
             }
         }
         if (found == 0)
@@ -941,15 +942,16 @@ void listSymmetricDifference()
     }
     for (int i = 0; i < n2; i++)
     {
-        int found = 0;
+        int found1 = 0;
         for (int j = 0; j < n1; j++)
         {
-            if (strcmp(fl1[i].Name, fl2[j].Name) == 0 && fl1[i].flight_id == fl2[j].flight_id)
+            if (strcmp(fl2[i].Name, fl1[j].Name) == 0 && fl1[j].flight_id == fl2[1].flight_id)
             {
-                found = 1;
+                found1 = 1;
+                break;
             }
         }
-        if (found == 0)
+        if (found1 == 0)
         {
             fl3[k++] = fl2[i];
         }
